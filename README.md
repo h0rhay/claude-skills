@@ -2,28 +2,40 @@
 
 Custom skills for [Claude Code](https://claude.ai/code). Pick the ones you want.
 
-## Install a skill
+## Install
 
-Copy the skill folder into your Claude skills directory:
+### Option 1: Terminal (devs)
 
 ```bash
-# clone the repo
 git clone https://github.com/h0rhay/claude-skills.git
-
-# copy the skill you want
 cp -r claude-skills/skills/tokenwise ~/.claude/skills/
 ```
 
-That's it. The skill is now available as `/tokenwise` in Claude Code.
+### Option 2: No terminal (non-devs)
 
-### Update a skill
+1. Click the green **Code** button above → **Download ZIP**
+2. Unzip it
+3. Copy the `skills/tokenwise` folder (including the `references` subfolder) into `~/.claude/skills/`
+
+Your folder should look like this:
+
+```
+~/.claude/skills/tokenwise/
+├── SKILL.md
+└── references/
+    └── checkpoint-format.md
+```
+
+That's it. `/tokenwise` is now available in Claude Code.
+
+### Update
 
 ```bash
 cd claude-skills && git pull
 cp -r skills/tokenwise ~/.claude/skills/
 ```
 
-### Remove a skill
+### Remove
 
 ```bash
 rm -rf ~/.claude/skills/tokenwise
