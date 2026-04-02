@@ -21,11 +21,11 @@ Copy any skill folder from `skills/` into `~/.claude/skills/`.
 
 ## Skills
 
-### `/h0rhay:tight`
+### `/h0rhay:tokenwise`
 
 Token-efficient session manager for long discovery conversations. Enforces concise responses, prevents context bloat, and saves compressed session state on demand.
 
-**Triggers:** `lean mode`, `save tokens`, `checkpoint`, `compress`, `/h0rhay:tight`
+**Triggers:** `lean mode`, `save tokens`, `checkpoint`, `compress`, `/h0rhay:tokenwise`
 
 **What it does:**
 - Enforces short, front-loaded answers from the first message

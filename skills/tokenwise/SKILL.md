@@ -1,5 +1,5 @@
 ---
-name: tight
+name: tokenwise
 description: Token-efficient session manager. Use for long discovery sessions, when user says 'lean mode', 'save tokens', 'checkpoint', or 'compress'. Enforces concise responses and saves context state.
 allowed-tools: Write, Read
 ---
