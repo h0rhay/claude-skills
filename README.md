@@ -1,54 +1,49 @@
 # claude-skills
 
-[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+Custom skills for [Claude Code](https://claude.ai/code). Pick the ones you want.
 
-Personal Claude Code skills plugin — token-efficient workflows and development best practices.
+## Install a skill
 
-## Install
+Copy the skill folder into your Claude skills directory:
 
-**Plugin install (recommended):**
 ```bash
-claude plugin install h0rhay/claude-skills
+# clone the repo
+git clone https://github.com/h0rhay/claude-skills.git
+
+# copy the skill you want
+cp -r claude-skills/skills/tokenwise ~/.claude/skills/
 ```
 
-**With `--plugin-dir` flag:**
+That's it. The skill is now available as `/tokenwise` in Claude Code.
+
+### Update a skill
+
 ```bash
-claude --plugin-dir /path/to/claude-skills
+cd claude-skills && git pull
+cp -r skills/tokenwise ~/.claude/skills/
 ```
 
-**Manual copy:**
-Copy any skill folder from `skills/` into `~/.claude/skills/`.
+### Remove a skill
+
+```bash
+rm -rf ~/.claude/skills/tokenwise
+```
 
 ## Skills
 
-### `/h0rhay:tokenwise`
+### tokenwise
 
-Token-efficient session manager for long discovery conversations. Enforces concise responses, prevents context bloat, and saves compressed session state on demand.
+Token-efficient session manager. Keeps Claude concise, compresses context on demand, and saves session state to disk.
 
-**Triggers:** `lean mode`, `save tokens`, `checkpoint`, `compress`, `/h0rhay:tokenwise`
+**Use when:** long Q&A sessions, research conversations, or any time you're burning through rate limits.
 
-**What it does:**
-- Enforces short, front-loaded answers from the first message
-- Generates compressed context checkpoints on demand (`"checkpoint"` or `"compress"`)
-- Saves checkpoints to `context-brief.md` in your working directory
-- Resumes from a pasted context block in a fresh session
+**How it works:**
+1. Auto-activates and enforces short, direct responses
+2. Say `checkpoint` or `compress` mid-session to save a context snapshot to `context-brief.md`
+3. Paste the snapshot into a new chat to pick up where you left off
 
-## Adding to a project
-
-Create a `.claude/settings.json` in your project root and reference the plugin:
-
-```json
-{
-  "plugins": ["h0rhay/claude-skills"]
-}
-```
-
-Or install globally so all projects can use the skills:
-
-```bash
-claude plugin install h0rhay/claude-skills --global
-```
+**Triggers:** `/tokenwise`, `lean mode`, `save tokens`, `checkpoint`, `compress`
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT
