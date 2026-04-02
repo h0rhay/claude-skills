@@ -63,6 +63,27 @@ Usage-based pricing increases expansion revenue but needs clear cost predictabil
 **Next Step:** Model three tier structures and compare margin impact.
 ```
 
+### Example 3: Content & Marketing Research Session
+
+```
+## Session State — LinkedIn Content Strategy for Dev Tool Launch — 2026-04-02
+
+**Goal:** Build a 4-week content calendar targeting indie hackers and senior devs for product launch.
+
+**Key Decisions:**
+- Lead with personal build stories, not feature announcements
+- Post Tue–Thu 10am UK, one LinkedIn + one X per topic
+- Tone: founder voice, conversational, data-led — no corporate fluff
+
+**Current Understanding:**
+LinkedIn engagement peaks when the hook is counterintuitive or contrarian. Posts under 300 words with a clear takeaway outperform long-form. Threading X posts doesn't add reach for our audience size — single punchy tweets work better. Competitor content is all "we're excited to announce" energy which leaves a gap for authentic build-in-public style.
+
+**Open Questions:**
+- Which 3 topics have the best overlap between our keywords and audience pain points?
+
+**Next Step:** Draft first two posts — one problem/solution story, one practical tip.
+```
+
 ## Compression Tips
 
 When generating a checkpoint, prioritize:
