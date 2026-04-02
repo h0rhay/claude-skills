@@ -1,0 +1,12 @@
+{
+  "name": "h0rhay",
+  "description": "Personal Claude Code skills — token-efficient workflows and development best practices",
+  "version": "1.0.0",
+  "author": {
+    "name": "George Clark",
+    "url": "https://github.com/h0rhay"
+  },
+  "homepage": "https://github.com/h0rhay/claude-skills",
+  "repository": "https://github.com/h0rhay/claude-skills",
+  "license": "MIT"
+}
